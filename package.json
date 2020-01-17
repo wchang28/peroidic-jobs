@@ -1,0 +1,22 @@
+{
+  "name": "peroidic-jobs",
+  "version": "1.0.0",
+  "description": "Periodic Jobs Launcher",
+  "scripts": {
+    "transpile": "tsc",
+    "start": "node ./dist/app.js",
+    "postinstall": "npm run transpile"
+  },
+  "author": "Wen Chang",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wchang28/peroidic-jobs.git"
+  },
+  "dependencies": {
+    "@types/node": "^13.1.7",
+    "helper-ios": "git+https://github.com/wchang28/helper-ios.git",
+    "periodic-polling": "git+https://github.com/wchang28/periodic-polling.git",
+    "typescript": "^3.7.5"
+  }
+}

@@ -1,0 +1,16 @@
+[
+    {
+        "intervalSec": 1
+        ,"cmd": {
+            "command": "cmd"
+            ,"args": ["/c", "echo", "Hello", "World"]
+        } 
+    }
+    ,{
+        "intervalSec": 3
+        ,"cmd": {
+            "command": "cmd"
+            ,"args": ["/c", "echo", "Hawdy", "yo"]
+        } 
+    }
+]
