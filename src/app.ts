@@ -13,6 +13,7 @@ interface JobCmd {
 }
 
 interface JobDef {
+    name: string;
     intervalSec: number;
     cmd: JobCmd
 }
@@ -33,7 +34,7 @@ const jobs = jobDefs.map((jobDef) => {
             const sr = new StringReceiver();
             pt.end();
             await pipelineP(pt, cgiio, sr);
-            console.log(sr.text);
+            console.log(`${new Date().toISOString()}: <<${jobDef.name}>>\n${sr.text}`);
         }
         ,jobDef.intervalSec
     );
