@@ -33,7 +33,7 @@ const jobs = jobDefs.map((jobDef) => {
             const sr = new StringReceiver();
             pt.end();
             await pipelineP(pt, cgiio, sr);
-            //console.log(sr.text);
+            console.log(sr.text);
         }
         ,jobDef.intervalSec
     );
